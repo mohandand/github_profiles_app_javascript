@@ -13,6 +13,7 @@ async function getUser(user){
 
 }
 
+//to display user details
 function createUserCard(user){
 
     const cardData = `
@@ -23,9 +24,9 @@ function createUserCard(user){
                 <h2>${user.name}</h2>
                 <p>${user.bio}</p>
                 <ul class="info">
-                    <li> ${user.followers}<strong>Followers</strong></li>
-                    <li> ${user.following}<strong>Following</strong></li>
-                    <li> ${user.public_repos}<strong>Repos</strong></li>
+                    <li>${user.followers}<strong>~Followers</strong></li>
+                    <li>${user.following}<strong>~Following</strong></li>
+                    <li>${user.public_repos}<strong>~Repos</strong></li>
                 </ul>
     `;
 
